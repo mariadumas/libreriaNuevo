@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f6a9cde3da.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Crear cuenta</title>
+</head>
+
+<body class="body-register">
+  
+
+<header>
+    <section class="up-section">
+        <div class="main-title">
+            <!-- <img src="/images/logo blanco.png" alt=""> -->
+            <h1 class="main-title__text">KODOS</h1>
+        </div>
+        <nav class="main-menu">
+            <ul class="menu">
+                <li class="menu__item"><a class="animation" href="/">Inicio</a></li>
+                <li class="menu__item"><a class="animation" href="">¿Quiénes somos?</a></li>
+                <li class="menu__item"><a class="animation" href="">Catálogo</a></li>
+                <li class="menu__item"><a href="/login"><i class="fa-regular fa-user"></i></a></li>
+                <li class="menu__item"><a href=""><i class="fa-brands fa-searchengin"></i></a></li>
+ 
+            </ul>
+        </nav>
+
+        <div class="hamburguer-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </section>
+</header>  
+
+<main class="main-register">
+    <div class="caja-register">
+      <form action="/user/register" method="POST"  class="formulario-completo" enctype="multipart/form-data">
+          
+              <label for="nombre"></label>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="input-barras" required>
+      
+              <label for="usuario" class="nombre-usuario"></label>
+              <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="input-barras" minlength="4" maxlength="8" >
+  
+         
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="E-mail" class="input-barras" required>
+
+
+             <label for="fecha-nacimiento" class="label-nacimiento">FECHA DE NACIMIENTO</label>
+      
+             <input type="date" name="nacimiento" class="input-barras" required>
+         
+              <label for="domicilio"></label>
+              <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="input-barras" required>
+      
+            <label class="titulo-avatar" for="avatar">SELECCIONAR UNA IMAGEN DE PERFIL</label>
+            <input type="file" name="imagen" class="input-avatar">
+        
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" class="input-barras" required>
+            <label for="password"></label>
+            <input type="password" name="password2" id="password2" placeholder="Confirmar contraseña" class="input-barras" required>
+          <div class="botones-register">
+            <button type="submit" class="boton-enviar">Enviar</button>
+          <button type="reset" class="boton-borrar">Borrar</button>
+        </div>
+
+      </form>
+    </div>
+ </main>
+
+ <footer class="footer-section">
+
+  <article class="footer-item">
+      <p class="navegacion">NAVEGACIÓN</p>
+     <ul>
+         <li>Inicio</li>
+         <li>Catálogo</li>
+         <li>Envíos</li>
+         <li>Contacto</li>
+     </ul>
+
+      </article>
+  <article class="footer-item">
+  <i class="fas fa-credit-card"></i>
+  <p>Todos los medios de pago</p>
+
+  <i class="fa-solid fa-truck-fast"></i>
+  <p>Envíos en el día a CABA Y GBA</p>
+  <i class="fa-solid fa-user-shield"></i>
+  <p>Seguridad y certificaciones</p>
+  </article>
+
+  <article class="footer-item">
+  <p class="contacto-redes">CONTACTO Y REDES SOCIALES</p>
+  <i class="fa-brands fa-whatsapp"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-facebook-f"></i>
+  
+  </article>
+
+
+<section class="footer-copyright">
+  <p>Copyright ©2022 Kodos S.R.L.</p>
+</section>
+</footer>
+  </body>
+ 

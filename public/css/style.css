@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Roboto+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Open+Sans:wght@300;400;700;800&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+
+/* "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.up-section {
+    background: #c53758;
+    opacity: 0.8;
+    align-items: center;
+    display: flex;
+    height: 85px;
+    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.up-section:hover {
+    opacity: 1.0;
+    transition: all ease-in-out 250ms;
+
+}
+
+.main-title {
+    width: 40%;
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 00px;
+}
+
+.main-menu {
+    width: 60%;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    display: none;
+
+}
+
+.menu__item {
+    list-style-type: none;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    margin-left: 30px;
+
+}
+
+.fa-user {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.fa-searchengin {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+.fa-user:hover , .fa-searchengin:hover {
+    color: lightgray;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: lightgray
+}
+
+nav .animation::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+.hero {
+    background-image: url("/images/cortada_Romeo-y-Julieta.jpeg");
+    display: flex;
+    border-color: #464646;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: nowrap;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.hero-box {
+    align-self: flex-end;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 35%;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+
+}
+
+
+.box-title,
+.box-text,
+.cfa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cfa {
+    font-family: Open Sans;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
+    opacity: 0.8;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.cfa:hover {
+    opacity: 1.0;
+
+}
+
+.box-text {
+    margin-bottom: 15px;
+}
+
+.box-title {
+    font-weight: bold;
+}
+
+.down-section {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.down-section p {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.down-section__text:hover {
+    color: lightgray
+}
+
+.down-section__button {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
+    opacity: 0.8;
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+.oculto {
+    display: none;
+}
+
+.hamburguer-menu i {
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 800px;
+    padding: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hamburguer-menu {
+    text-align: center;
+    margin-right: 5px
+}
+
+
+/* Main */
+/*
+/* Catalogue */
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.graphic-novel {
+    background-color: #912941;
+    padding-bottom: 50px;
+}
+
+.title-container {
+    background-color: #f4f4f4;
+    padding: 40px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.novel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    width: 80%;
+    margin-top: 15px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+}
+
+.novel-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.novel-item img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: none;
+}
+
+.novel-item h2 {
+    font-size: 16px;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+.novel-item p {
+    color: #464646;
+    font-size: 14px;
+}
+
+.novel-item:hover {
+    transform: scale(1.10);
+    transition: all ease-in-out 250ms;
+}
+
+.literature {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.literature-title-container {
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    padding: 40px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.literature-section {
+    background-color: #1C6078;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.literature-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    width: 80%;
+    background-color: #f4f4f4;
+    border-radius: 35px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.literature-description {
+    width: 70%;
+    align-self: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.literature-highlight {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.literature-highlight img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-title {
+    margin-bottom: 10px;
+    color: #c53758;
+    font-size: 20px;
+
+}
+
+.highlight-subtitle {
+    color: #464646;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+
+.highlight-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.highlight-button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
+    color: whitesmoke;
+    align-self: center;
+}
+
+.corner-text-wrapper {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    clip: rect(0px, 141.421px, 70.7107px, 0px);
+    height: 141.421px;
+    position: absolute;
+    right: -20.7107px;
+    top: -20.7107px;
+    width: 141.421px;
+    z-index: 1;
+}
+
+.corner-text {
+    color: white;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 20px;
+    top: 20px;
+    background-color: #c53758;
+    display: block;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+
+}
+
+.corner-text span {
+    position: relative;
+    top: -185px;
+    left: 10px;
+    display: block;
+    text-align: center;
+    line-height: 400px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    text-align: right;
+}
+
+.highlight-button-container {
+    align-self: center;
+}
+
+.children {
+    background-color: lightgrey;
+    padding-bottom: 50px;
+}
+
+.children-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    width: 80%;
+    margin-top: 15px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+}
+
+.children-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.children-item img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: none;
+}
+
+.children-item h2 {
+    font-size: 16px;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+.children-item p {
+    color: #464646;
+    font-size: 14px;
+}
+
+.children-item:hover {
+    transform: scale(1.10);
+    transition: all ease-in-out 250ms;
+}
+
+
+.more-genres {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    width: 50%;
+    margin-top: 100px;
+}
+
+
+.viajes, .humor, .arte, .biografia {
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+
+}
+.viajes {
+    background-color: #C4BD4B;
+    margin-bottom: 3px;
+}
+
+.biografia {
+    background-color: #912941;
+}
+
+
+.humor {
+    background-color: #DB4032;
+    margin-bottom: 3px;   
+}
+
+.arte {
+    background-color: #239AC4;
+    margin-bottom: 3px;
+}
+
+.viajes a, .humor a, .arte a, .biografia a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.more-genres p:hover {
+    transform: scale(1.01);
+    transition: all ease-in-out 250ms;
+  
+}
+
+/* Footer */
+
+
+.footer-section {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #c53758;
+    opacity: 0.8;
+    color: whitesmoke;
+}
+
+.footer-section:hover {
+    opacity: 1.0;
+    transition: all ease-in-out 250ms;
+}
+
+.footer-item {
+    color: var(--main-dark-gray);
+    padding: 35px 45px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-item >i {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-item >p {
+    font-size: 14px;
+    margin-bottom: 15px;
+
+}
+
+
+.footer-item ul li {
+    font-size: 14px;
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+}
+
+.footer-item>.fa-whatsapp {
+    /* color: #39b54a; */
+    font-size: 20px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.footer-item>.fa-facebook-f {
+    font-size: 20px;
+
+}
+
+.footer-item>.fa-instagram {
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+
+.navegacion,
+.contacto-redes {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.footer-copyright>p {
+    font-size: 14px;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Login y Register*/
+
+.body-login, .body-register {
+    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-login {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: content-box;
+
+}
+.input-barras {
+    border: lightgray solid 1px;
+    color: -internal-light-dark(black, white);
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 90%;
+}
+
+
+.div-boton-login {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.boton-login, .boton-enviar, .boton-borrar {
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
+    opacity: 0.8;
+    color: whitesmoke;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    width: 80%;
+}
+
+.botones-register {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.boton-enviar {
+    width: 48%;
+}
+.boton-borrar {
+    width: 48%;
+}
+
+.boton-login:hover, .boton-enviar:hover, .boton-borrar:hover {
+    opacity: 1.0;
+}
+
+.recuperacion-contraseña, a {
+    text-decoration: none;
+    color: #4F4F4F;
+    padding-bottom: 15px;
+}
+
+.recuperacion-contraseña a:hover {
+    color: darkblue;
+}
+
+.caja-login,
+.caja-register {
+    background-color: white;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 50px;
+    border: #464646 solid 2px;
+    border-radius: 35px;
+}
+
+.titulo-avatar, .label-nacimiento {
+    color: #434343;
+    font-size: 16px;
+    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+
+.input-avatar {
+    padding: 16px;
+}
+
+
+
+/* Recuperar contraseña */
+
+.envio-mail {
+    color: #4F4F4F;
+}
+
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+
+    .main-title {
+        width: 33%;
+    }
+
+    .main-menu {
+        width: 60%;
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+
+    }
+
+    .menu__item {
+        list-style-type: none;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        text-decoration: none;
+        position: relative;
+        font-weight: bold;
+        margin-left: 30px;
+
+    }
+
+    .fa-user,
+    .fa-magnifying-glass {
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: lighter;
+
+    }
+
+    .fa-user:hover,
+    .fa-magnifying-glass:hover {
+        color: lightgray;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        color: lightgray
+    }
+
+    nav .animation::before {
+        content: "";
+        display: block;
+        height: 5px;
+        background-color: lightgray;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        width: 100%;
+    }
+
+
+    .hamburguer-menu {
+        display: none;
+    }
+
+    .novel-item, .children-item {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        padding: 20px;
+        width: 47%;
+    }
+
+    .title-container {
+        font-size: 2rem;
+
+    }
+
+    .literature-highlight {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .literature-container {
+        flex-wrap: wrap;
+    }
+
+    .literature-description {
+        width: 40%;
+        justify-content: flex-start;
+    }
+    
+
+ 
+
+
+
+    /* Footer */
+    .footer-item:nth-child(2)::before,
+    .footer-item:nth-child(2)::after {
+        background-color: var(--main-light-gray);
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -32.5px;
+        position: absolute;
+        top: 50%;
+        width: 1px;
+    }
+
+    .footer-item:nth-child(2)::before {
+        left: 0;
+    }
+
+    .footer-item:nth-child(2)::after {
+        right: 0;
+    }
+
+    .footer-item {
+        position: relative;
+        width: 33%;
+    }
+
+    .footer-item h2 {
+        margin-bottom: 30px;
+    }
+
+    .footer-item p {
+        font-size: 14px;
+    }
+    .caja-login, .caja-register {
+        width: 60%
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+    .hero-box {
+        display: block;
+    }
+
+    .hero {
+        justify-content: space-between;
+    }
+
+    .down-section {
+        display: none;
+    }
+
+    .oculto {
+        display: block
+    }
+
+    .novel-item, .children-item {
+        margin-right: 8px;
+        width: 25%;
+        padding: 20px;
+        /* border: 0.2px solid #dbdbdb; */
+        border-radius: 5px;
+
+    }
+
+    .viajes, .biografia {
+        width: 94%;
+
+     
+    }
+    .humor, .arte {
+        width: 47%;
+    
+    }
+    .humor {
+        margin-right: 3px;
+    }
+
+.caja-login, .caja-register {
+    width: 40%;
+
+}
+
+    
+}
