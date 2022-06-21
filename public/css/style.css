@@ -23,7 +23,7 @@ body {
     opacity: 0.8;
     align-items: center;
     display: flex;
-    height: 85px;
+    height: 75px;
     font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
     width: 98%;
     margin-left: auto;
@@ -218,12 +218,12 @@ nav a:hover::before {
 }
 
 .hamburguer-menu i {
-    border-radius: 5px;
     color: whitesmoke;
     font-weight: 800px;
     padding: 30px;
     cursor: pointer;
     text-align: center;
+    font-size: 30px;
 }
 
 .hamburguer-menu {
@@ -293,10 +293,7 @@ main {
     font-size: 14px;
 }
 
-.novel-item:hover {
-    transform: scale(1.10);
-    transition: all ease-in-out 250ms;
-}
+
 
 .literature {
     margin-left: auto;
@@ -499,7 +496,7 @@ main {
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 200px;
-    width: 50%;
+    width: 85%;
     margin-top: 100px;
 }
 
@@ -770,6 +767,10 @@ main {
         margin-left: 30px;
 
     }
+    .novel-item:hover {
+        transform: scale(1.10);
+        transition: all ease-in-out 250ms;
+    }
 
     .fa-user,
     .fa-magnifying-glass {
@@ -842,6 +843,10 @@ main {
         width: 40%;
         justify-content: flex-start;
     }
+
+    .more-genres {
+        width: 60%
+    }
     
 
  
@@ -889,6 +894,10 @@ main {
 }
 
 @media (min-width: 1280px) {
+    .up-section {
+        height: 80px;
+    }
+
     .hero-box {
         display: block;
     }
