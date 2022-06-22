@@ -5,30 +5,31 @@
 /* "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif; */
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body {
-    margin: 0;
-    padding: 0%;
     margin-right: auto;
     margin-left: auto;
+    padding: 0%;
+
 }
 
 .up-section {
+    align-items: center;
     background: #c53758;
     opacity: 0.8;
-    align-items: center;
     display: flex;
-    height: 75px;
     font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
-    width: 98%;
+    height: 75px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
+    width: 98%;
 }
 
 .up-section:hover {
@@ -38,46 +39,44 @@ body {
 }
 
 .main-title {
-    width: 40%;
-    margin-left: 30px;
     color: whitesmoke;
     font-size: 18px;
-    font-weight: 00px;
+    margin-left: 30px; 
+    width: 40%;
+    
 }
 
 .main-menu {
-    width: 60%;
+    width: 40%;
 
 }
 
 .menu {
+    align-items: center;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
     display: none;
+    justify-content: flex-end;
+   
 
 }
 
 .menu__item {
-    list-style-type: none;
-    padding-top: 16px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    position: relative;
     font-weight: bold;
-    width: 150px;
+    list-style-type: none;
+    padding-bottom: 20px;
+    padding-top: 16px;
+    position: relative;
     text-align: center;
+    text-decoration: none;
+    width: 150px;
+    
 }
 
-.fa-user {
+.fa-user, .fa-search {
     color: whitesmoke;
     font-size: 20px;
 }
 
-.fa-search {
-    color: whitesmoke;
-    font-size: 20px;
-}
 
 
 .fa-user:hover , .fa-search:hover {
@@ -85,10 +84,11 @@ body {
 }
 
 nav a {
-    text-decoration: none;
     color: whitesmoke;
-    text-transform: uppercase;
     font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
 }
 
 nav a:hover {
@@ -96,14 +96,14 @@ nav a:hover {
 }
 
 nav .animation::before {
+    background-color: lightgray;
     content: "";
     display: block;
     height: 5px;
-    background-color: lightgray;
     position: absolute;
     top: 0;
-    width: 0%;
     transition: all ease-in-out 250ms;
+    width: 0%;
 }
 
 nav a:hover::before {
@@ -113,17 +113,16 @@ nav a:hover::before {
 
 .hero {
     background-image: url("/images/cortada_Romeo-y-Julieta.jpeg");
-    display: flex;
-    border-color: #464646;
-    background-repeat: no-repeat;
+    background-color: #464646;
     background-position: left center;
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     height: 100vh;
-    margin: 0;
-    flex-direction: column;
     justify-content: space-between;
-
+    margin: 0;
 }
 
 
@@ -148,23 +147,24 @@ nav a:hover::before {
 .box-title,
 .box-text,
 .cfa {
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
+    
 }
 
 .cfa {
-    font-family: Open Sans;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 16px;
-    padding-left: 16px;
-    justify-content: center;
     background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
-    opacity: 0.8;
-    color: whitesmoke;
     border: none;
     border-radius: 5px;
-
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: Open Sans;
+    justify-content: center;
+    opacity: 0.8;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
 }
 
 .cfa:hover {
@@ -182,18 +182,17 @@ nav a:hover::before {
 
 .down-section {
     background: rgba(0, 0, 0, 0.6);
-    display: inline;
     color: whitesmoke;
-    text-align: center;
+    display: inline;
     padding-bottom: 10px;
-
+    text-align: center;
 }
 
 .down-section p {
-    text-decoration: none;
     color: whitesmoke;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-decoration: none;
 }
 
 .down-section__text:hover {
@@ -201,15 +200,13 @@ nav a:hover::before {
 }
 
 .down-section__button {
-    padding: 14px;
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
     border: none;
     border-radius: 5px;
-    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
-    opacity: 0.8;
     color: whitesmoke;
+    opacity: 0.8;
+    padding: 14px;
     text-align: center;
-
-
 }
 
 .oculto {
@@ -218,16 +215,17 @@ nav a:hover::before {
 
 .hamburguer-menu i {
     color: whitesmoke;
+    cursor: pointer;
+    font-size: 30px;
     font-weight: 800px;
     padding: 30px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 30px;
+    text-align: center;  
 }
 
 .hamburguer-menu {
+    margin-right: 5px;
     text-align: center;
-    margin-right: 5px
+    
 }
 
 
@@ -247,12 +245,12 @@ main {
 
 .title-container {
     background-color: #f4f4f4;
-    padding: 40px 0;
     margin-bottom: 50px;
+    padding: 40px 0;
 }
 
 .title-container h1 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: bold;
     margin: auto;
     width: 80%;
@@ -260,17 +258,17 @@ main {
 }
 
 .novel-container {
+    background-color: white;
+    border-radius: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: white;
-    width: 80%;
     margin-top: 15px;
-    padding-top: 55px;
-    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 35px;
+    padding-bottom: 30px;
+    padding-top: 55px;
+    width: 80%;
 }
 
 .novel-item {
@@ -281,16 +279,16 @@ main {
 }
 
 .novel-item img {
+    border: none;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    border: none;
+    width: 100%; 
 }
 
 .novel-item h2 {
     font-size: 16px;
-    padding-top: 8px;
     margin-bottom: 10px;
+    padding-top: 8px;
 }
 
 .novel-item p {
@@ -298,100 +296,103 @@ main {
     font-size: 14px;
 }
 
+.precio {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 
 
 .literature {
+    background-color: #1C6078;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .literature-title-container {
     background-color: rgb(255, 255, 255);
     color: grey;
-    padding: 40px 30px;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 30px;
-
+    padding: 40px 30px;
 }
 
 .literature-section {
     background-color: #1C6078;
-    padding-top: 50px;
     padding-bottom: 50px;
+    padding-top: 50px;
 
 }
 
 .literature-container {
+    background-color: #f4f4f4;
+    border-radius: 35px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
+    margin: 50px auto;
+    overflow: hidden;
     padding-top: 50px;
     padding-right: 20px;
     padding-bottom: 30px;
-    width: 80%;
-    background-color: #f4f4f4;
-    border-radius: 35px;
-    margin: 50px auto;
-    overflow: hidden;
     position: relative;
+    width: 80%;
 }
 
 .literature-description {
-    width: 70%;
     align-self: center;
-    padding-right: 20px;
-    padding-left: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 70%;
 }
 
 
 .literature-highlight {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     align-self: flex-start;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .literature-highlight img {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 .highlight-title {
-    margin-bottom: 10px;
     color: #c53758;
     font-size: 20px;
+    margin-bottom: 10px;
 
 }
 
 .highlight-subtitle {
     color: #464646;
-    margin-bottom: 10px;
     font-size: 16px;
+    margin-bottom: 10px;
+    
 
 }
 
 .highlight-text {
+    font-size: 14px;
     font-style: italic;
     margin-bottom: 25px;
-    font-size: 14px;
 }
 
 .highlight-button {
-    padding: 14px 28px;
+    align-self: center;
+    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
     border: none;
     border-radius: 5px;
-    background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
-    color: whitesmoke;
-    align-self: center;
+    color: whitesmoke;    
+    padding: 14px 28px;
 }
 
 .corner-text-wrapper {
@@ -449,17 +450,18 @@ main {
 }
 
 .children-container {
+    background-color: white;
+    border-radius: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: white;
-    width: 80%;
     margin-top: 15px;
-    padding-top: 55px;
-    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 35px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    padding-top: 55px;
+    width: 80%;
 }
 
 .children-item {
@@ -470,6 +472,7 @@ main {
 }
 
 .children-item img {
+    border: none;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -478,8 +481,9 @@ main {
 
 .children-item h2 {
     font-size: 16px;
-    padding-top: 8px;
     margin-bottom: 10px;
+    padding-top: 8px;
+    
 }
 
 .children-item p {
@@ -494,25 +498,25 @@ main {
 
 
 .more-genres {
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding-top: 50px;
+    justify-content: center;
     padding-bottom: 200px;
-    width: 85%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
+    width: 85%;
 }
 
 
 .viajes, .humor, .biografia {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
     padding: 50px;
     text-align: center;
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: whitesmoke;
-    font-weight: bold;
     width: 100%;
 
 }
@@ -538,9 +542,9 @@ main {
 
 
 .viajes a, .humor a, .biografia a {
-    text-decoration: none;
     color: whitesmoke;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .more-genres p:hover {
@@ -553,16 +557,15 @@ main {
 
 
 .footer-section {
-
+    background-color: #c53758;
+    color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    background-color: #c53758;
     opacity: 0.8;
-    color: whitesmoke;
+    width: 100%;
 }
 
 .footer-section:hover {
@@ -634,17 +637,19 @@ main {
 /* Login y Register*/
 
 .body-login, .body-register {
-    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
     background-color: #f4f4f4;
+    font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
+    
 }
 
 .main-login {
+    box-sizing: border-box;
+    font-size: 14px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    font-size: 14px;
     text-align: center;
-    box-sizing: content-box;
+    
 
 }
 .input-barras {
@@ -667,12 +672,11 @@ main {
 
 .boton-login, .boton-enviar, .boton-borrar {
     background: linear-gradient(180deg, rgba(236, 26, 65, 1) 0%, rgba(117, 4, 84, 1) 100%);
-    opacity: 0.8;
-    color: whitesmoke;
     border: none;
-    color: white;
+    color: whitesmoke;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
     padding: 8px;
     width: 80%;
 }
@@ -695,36 +699,37 @@ main {
 }
 
 .recuperacion-contraseña, a {
-    text-decoration: none;
     color: #4F4F4F;
     padding-bottom: 15px;
+    text-decoration: none; 
 }
 
 .recuperacion-contraseña a:hover {
     color: darkblue;
+    cursor: pointer;
 }
 
 .caja-login,
 .caja-register {
-    background-color: white;
-    width: 85%;
-    justify-content: center;
     align-items: center;
+    background-color: white;
+    border: #464646 solid 2px;
+    border-radius: 35px; 
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 150px;
     padding: 50px;
-    border: #464646 solid 2px;
-    border-radius: 35px;
+    width: 85%;
 }
 
 .titulo-avatar, .label-nacimiento {
     color: #434343;
-    font-size: 16px;
     font-family: "Open Sans", "Segoe UI", "Lucida Grande", Verdana, sans-serif;
-    margin-left: 15px;
+    font-size: 16px;
     margin-bottom: 5px;
+    margin-left: 15px;
     margin-top: 15px;
 }
 
@@ -759,68 +764,25 @@ main {
 
     .menu {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 30px;
+       
 
     }
 
     .menu__item {
-        list-style-type: none;
         padding-top: 23px;
         padding-bottom: 23px;
-        text-decoration: none;
-        position: relative;
-        font-weight: bold;
-        margin-left: 30px;
 
-    }
-    .novel-item:hover {
-        transform: scale(1.10);
-        transition: all ease-in-out 250ms;
-    }
-
-    .fa-user,
-    .fa-magnifying-glass {
-        color: whitesmoke;
-        font-size: 20px;
-        font-weight: lighter;
-
-    }
-
-    .fa-user:hover,
-    .fa-magnifying-glass:hover {
-        color: lightgray;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: whitesmoke;
-        text-transform: uppercase;
-        font-size: 14px;
-    }
-
-    nav a:hover {
-        color: lightgray
-    }
-
-    nav .animation::before {
-        content: "";
-        display: block;
-        height: 5px;
-        background-color: lightgray;
-        position: absolute;
-        top: 0;
-        width: 0%;
-        transition: all ease-in-out 250ms;
-    }
-
-    nav a:hover::before {
-        width: 100%;
     }
 
 
     .hamburguer-menu {
         display: none;
+    }
+
+
+    .novel-item:hover {
+        transform: scale(1.10);
+        transition: all ease-in-out 250ms;
     }
 
     .novel-item, .children-item {
@@ -830,22 +792,17 @@ main {
         width: 47%;
     }
 
-    .title-container {
-        font-size: 2rem;
-
-    }
-
-    .literature-highlight {
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
+ 
 
     .literature-container {
-        flex-wrap: wrap;
+        max-width: 1130px;
     }
+   
+   
+    .literature-highlight {
+        width: 40%;
 
+    }
     .literature-description {
         width: 40%;
         justify-content: flex-start;
@@ -924,10 +881,6 @@ main {
     .novel-item, .children-item {
         margin-right: 8px;
         width: 25%;
-        padding: 20px;
-        /* border: 0.2px solid #dbdbdb; */
-        border-radius: 5px;
-
     }
 
     .viajes  {
