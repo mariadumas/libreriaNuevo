@@ -60,13 +60,13 @@ body {
 
 .menu__item {
     list-style-type: none;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 16px;
+    padding-bottom: 20px;
     text-decoration: none;
     position: relative;
     font-weight: bold;
-    margin-left: 30px;
-
+    width: 150px;
+    text-align: center;
 }
 
 .fa-user {
@@ -74,13 +74,13 @@ body {
     font-size: 20px;
 }
 
-.fa-searchengin {
+.fa-search {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
-.fa-user:hover , .fa-searchengin:hover {
+.fa-user:hover , .fa-search:hover {
     color: lightgray;
 }
 
@@ -117,7 +117,6 @@ nav a:hover::before {
     border-color: #464646;
     background-repeat: no-repeat;
     background-position: left center;
-    background-attachment: fixed;
     background-size: cover;
     flex-wrap: nowrap;
     height: 100vh;
@@ -248,10 +247,16 @@ main {
 
 .title-container {
     background-color: #f4f4f4;
-    padding: 40px 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding: 40px 0;
     margin-bottom: 50px;
+}
+
+.title-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+
 }
 
 .novel-container {
@@ -439,7 +444,7 @@ main {
 }
 
 .children {
-    background-color: lightgrey;
+    background-color: #f7f6d5;
     padding-bottom: 50px;
 }
 
@@ -501,7 +506,7 @@ main {
 }
 
 
-.viajes, .humor, .arte, .biografia {
+.viajes, .humor, .biografia {
     padding: 50px;
     text-align: center;
     font-size: 25px;
@@ -512,32 +517,34 @@ main {
 
 }
 .viajes {
-    background-color: #C4BD4B;
+    background-color: #556270 ;
     margin-bottom: 3px;
+    opacity: 0.8
 }
 
 .biografia {
-    background-color: #912941;
+    background-color: #4ECDC4;
+    margin-bottom: 3px;
+    opacity: 0.8
 }
 
 
 .humor {
-    background-color: #DB4032;
-    margin-bottom: 3px;   
+    background-color: #FF6B6B;
+    margin-bottom: 3px;  
+    opacity: 0.8 
 }
 
-.arte {
-    background-color: #239AC4;
-    margin-bottom: 3px;
-}
 
-.viajes a, .humor a, .arte a, .biografia a {
+
+.viajes a, .humor a, .biografia a {
     text-decoration: none;
     color: whitesmoke;
+    cursor: pointer;
 }
 
 .more-genres p:hover {
-    transform: scale(1.01);
+    opacity: 1.0;
     transition: all ease-in-out 250ms;
   
 }
@@ -829,7 +836,7 @@ main {
     }
 
     .literature-highlight {
-        width: 40%;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
 
@@ -887,7 +894,7 @@ main {
         font-size: 14px;
     }
     .caja-login, .caja-register {
-        width: 60%
+        max-width: 500px
     }
 
 
@@ -923,12 +930,11 @@ main {
 
     }
 
-    .viajes, .biografia {
-        width: 94%;
-
-     
+    .viajes  {
+        width: 94%; 
     }
-    .humor, .arte {
+
+    .humor, .biografia {
         width: 47%;
     
     }
@@ -936,10 +942,7 @@ main {
         margin-right: 3px;
     }
 
-.caja-login, .caja-register {
-    width: 40%;
 
-}
 
     
 }
